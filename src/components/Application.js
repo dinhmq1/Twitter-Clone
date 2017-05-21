@@ -1,3 +1,6 @@
+// Define Application.js React component
+// Import necessary modules
+// use const instead of var so variable is static type
 import React, { PropTypes } from 'react';
 import MessagesContainer from '../containers/MessagesContainer';
 import NewMessageContainer from '../containers/NewMessageContainer';

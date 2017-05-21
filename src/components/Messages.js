@@ -1,3 +1,6 @@
+// Define Messages.js React component
+// Import necessary modules
+// use const instead of var so variable is static type
 import React, { PropTypes } from 'react';
 import Message from './Message';
 import map from 'lodash/map';
