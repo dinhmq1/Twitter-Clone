@@ -10,6 +10,9 @@
 /build
 /functions
 
+.sass-cache/
+src/index.css.map
+
 # misc
 .DS_Store
 .env
