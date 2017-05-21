@@ -1,4 +1,92 @@
+html {
+    /* Full height */
+    height: 100%; 
+    background: linear-gradient( #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
 .SignIn {
-  border: 1px solid #ccc;
-  padding: 1em;
+    max-width: 350px;
+    min-width: 280px;
+    margin: 60px auto 20px;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    background-clip: padding-box;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+}
+
+.SignIn > h1 {
+    text-align: center;
+}
+.SignIn > img {
+    margin: 60px auto 20px;
+    display: block;
+}
+.SignInLogo {
+    background: none repeat scroll 0 0 #34495e;
+    color: #fff;
+    display: block;
+    /*font-size: 2em;*/
+    font-weight: 400;
+    padding: 35px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.BtnSignIn {
+  background-color: hsla(191, 76%, 47%, 1);
+  border-radius: 3px;
+  border: 1px solid hsla(191, 76%, 37%, 1);
+  box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.20);
+  color: white;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 0.8rem;
+  font-weight: 300;
+  outline: none;
+  padding: 0.5rem 1rem;
+  transition: 0.2s all;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+button:not(:last-child), input[type="submit"]:not(:last-child), .button :not(:last-child) {
+  margin-right: 1em;
+}
+
+button:hover, input[type="submit"]:hover, .button:hover {
+  background-color: hsla(191, 76%, 57%, 1);
+  border-color: hsla(191, 76%, 47%, 1);
+}
+
+button:active, input[type="submit"]:active, .button:active {
+  background-color: hsla(191, 76%, 42%, 1);
+  border-color: hsla(191, 76%, 32%, 1);
+  box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,0.20);
+  transform: translate(1px, 1px);
+}
+
+button:disabled, input[type="submit"]:disabled, .button:disabled {
+  background-color: white;
+  border-color: #aaa;
+  box-shadow: none;
+  color: #aaa;
+}
+
+button.forward:after, input[type="submit"].forward:after, .button.forward:after {
+  content: ' →';
+}
+
+button.back:before, input[type="submit"].back:before, .button.back:before {
+  content: '← ';
+}
+
+button.secondary, input[type="submit"].secondary, .button.secondary {
+  background-color: white;
+  box-sizing: border-box;
+  color: hsla(191, 76%, 47%, 1);
+}
+
+button.secondary:hover, input[type="submit"].secondary:hover, .button.secondary:hover {
+  background-color: #F9F9F9;
+  color: hsla(191, 76%, 37%, 1);
 }
