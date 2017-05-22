@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   padding: 1em;
+  width: 96.6666%;
 }
 
 .Application--sidebar {

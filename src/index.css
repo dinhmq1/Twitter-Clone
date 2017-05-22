@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * HTML5 Boilerplate
  *
@@ -13,10 +14,21 @@
    HTML5 display definitions
    ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
   display: block; }
 
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -35,11 +47,17 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
 html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  width: 90%;
+  margin: 0 auto;
+  max-width: 950px;
+  /* set the width */
+  /* center the content */ }
 
-html, button, input, select, textarea {
+html,
+button,
+input,
+select,
+textarea {
   font-family: 'Roboto', sans-serif !important;
   color: #222; }
 
@@ -53,6 +71,14 @@ body {
  * These selection declarations have to be separate
  * Also: hot pink! (or customize the background color to match your design)
  */
+.Application {
+  display: block;
+  width: 96.6666%; }
+
+.Application--sidebar {
+  display: flex;
+  width: 96.6666%; }
+
 ::-moz-selection {
   background: #fe57a1;
   color: #fff;
@@ -79,7 +105,8 @@ a:focus {
   outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
-a:hover, a:active {
+a:hover,
+a:active {
   outline: 0; }
 
 /* =============================================================================
@@ -88,7 +115,8 @@ a:hover, a:active {
 abbr[title] {
   border-bottom: 1px dotted; }
 
-b, strong {
+b,
+strong {
   font-weight: bold; }
 
 blockquote {
@@ -117,7 +145,10 @@ mark {
   font-weight: bold; }
 
 /* Redeclare monospace font family: h5bp.com/j */
-pre, code, kbd, samp {
+pre,
+code,
+kbd,
+samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
   font-size: 1em; }
@@ -131,7 +162,8 @@ pre {
 q {
   quotes: none; }
 
-q:before, q:after {
+q:before,
+q:after {
   content: "";
   content: none; }
 
@@ -139,7 +171,8 @@ small {
   font-size: 85%; }
 
 /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -154,14 +187,16 @@ sub {
 /* =============================================================================
    Lists
    ========================================================================== */
-ul, ol {
+ul,
+ol {
   margin: 1em 0;
   padding: 0 0 0 40px; }
 
 dd {
   margin: 0 0 0 40px; }
 
-nav ul, nav ol {
+nav ul,
+nav ol {
   list-style: none;
   list-style-image: none;
   margin: 0;
@@ -221,7 +256,10 @@ legend {
  * 2. Remove margins in FF3/4 S5 Chrome
  * 3. Define consistent vertical alignment display in all browsers
  */
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
@@ -230,7 +268,8 @@ button, input, select, textarea {
 /*
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
  */
-button, input {
+button,
+input {
   line-height: normal; }
 
 /*
@@ -238,7 +277,10 @@ button, input {
  * 2. Allow styling of clickable form elements in iOS
  * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
  */
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
   *overflow: visible; }
@@ -246,13 +288,15 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements
  */
-button[disabled], input[disabled] {
+button[disabled],
+input[disabled] {
   cursor: default; }
 
 /*
  * Consistent box sizing and appearance
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
   *width: 13px;
@@ -264,13 +308,15 @@ input[type="search"] {
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none; }
 
 /*
  * Remove inner padding and border in FF3/4: h5bp.com/l
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -284,7 +330,8 @@ textarea {
   resize: vertical; }
 
 /* Colors for form validity */
-input:invalid, textarea:invalid {
+input:invalid,
+textarea:invalid {
   background-color: #f0dddd; }
 
 /* =============================================================================
@@ -332,7 +379,8 @@ td {
   width: 1px; }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -345,7 +393,8 @@ td {
   visibility: hidden; }
 
 /* Contain floats: h5bp.com/q */
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: "";
   display: table; }
 
@@ -369,7 +418,8 @@ td {
     -ms-filter: none !important; }
 
   /* Black prints faster: h5bp.com/s */
-  a, a:visited {
+  a,
+  a:visited {
     text-decoration: underline; }
 
   a[href]:after {
@@ -378,11 +428,14 @@ td {
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
     content: ""; }
 
   /* Don't show links for images, or javascript/internal links */
-  pre, blockquote {
+  pre,
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
 
@@ -390,7 +443,8 @@ td {
     display: table-header-group; }
 
   /* h5bp.com/t */
-  tr, img {
+  tr,
+  img {
     page-break-inside: avoid; }
 
   img {
@@ -398,12 +452,104 @@ td {
 
   @page {
     margin: 0.5cm; }
-  p, h2, h3 {
+  p,
+  h2,
+  h3 {
     orphans: 3;
     widows: 3; }
 
-  h2, h3 {
+  h2,
+  h3 {
     page-break-after: avoid; } }
+a.button {
+  text-decoration: none; }
+
+button, input[type="submit"], .button {
+  background-color: #1db2d3;
+  border-radius: 3px;
+  border: 1px solid #178ca6;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 0.8rem;
+  font-weight: 300;
+  outline: none;
+  padding: 0.5rem 1rem;
+  transition: 0.2s all; }
+
+/*@media screen and (max-width: 450px) {
+  button, input[type="submit"], .button {
+    display: block;
+    margin-bottom: 10px;
+    width: 400px;
+  }
+}*/
+button:not(:last-child), input[type="submit"]:not(:last-child), .button :not(:last-child) {
+  margin-right: 1em; }
+
+button:hover, input[type="submit"]:hover, .button:hover {
+  background-color: #3ec6e5;
+  border-color: #1db2d3; }
+
+button:active, input[type="submit"]:active, .button:active {
+  background-color: #1a9fbc;
+  border-color: #147990;
+  box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(1px, 1px); }
+
+button:disabled, input[type="submit"]:disabled, .button:disabled {
+  background-color: white;
+  border-color: #aaa;
+  box-shadow: none;
+  color: #aaa; }
+
+button.forward:after, input[type="submit"].forward:after, .button.forward:after {
+  content: ' →'; }
+
+button.back:before, input[type="submit"].back:before, .button.back:before {
+  content: '← '; }
+
+button.secondary, input[type="submit"].secondary, .button.secondary {
+  background-color: white;
+  box-sizing: border-box;
+  color: #1db2d3; }
+
+button.secondary:hover, input[type="submit"].secondary:hover, .button.secondary:hover {
+  background-color: #F9F9F9;
+  color: #178ca6; }
+
+button.secondary:active, input[type="submit"].secondary:active, .button.secondary:active {
+  background-color: #EEE; }
+
+button.destructive, input[type="submit"].destructive, .button.destructive {
+  background-color: #d31d1d;
+  border-color: #a61717; }
+
+button.destructive:hover, input[type="submit"].destructive:hover, .button.destructive:hover {
+  background-color: #e53e3e;
+  border-color: #d31d1d; }
+
+button.destructive:active, input[type="submit"].destructive:active, .button.destructive:active {
+  background-color: #a61717;
+  border-color: #791111; }
+
+button.block, input[type="submit"].block, .button.block {
+  display: block;
+  width: 100%; }
+
+button.large, input[type="submit"].large, .button.large {
+  font-size: 1.5em; }
+
+button.small, input[type="submit"].small, .button.small {
+  font-size: 0.8em;
+  padding: 0.5em 1em; }
+
+input:not([type="submit"]) {
+  border: 1px solid #ccc;
+  margin-bottom: 0.5em;
+  padding: 1em 0.5em;
+  width: 90%; }
+
 body {
   width: 100%;
   float: left; }
@@ -478,5 +624,39 @@ iPad 3
   /* Styles */ }
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */ }
+.z-depth-0 {
+  box-shadow: none !important; }
+
+.z-depth-1,
+nav,
+.card-panel,
+.card,
+.toast,
+.btn,
+.btn-large,
+.btn-floating,
+.dropdown-content,
+.collapsible,
+.side-nav {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+
+.z-depth-1-half,
+.btn:hover,
+.btn-large:hover,
+.btn-floating:hover {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
+
+.z-depth-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
+
+.z-depth-3 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+
+.z-depth-4,
+.modal {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
+
+.z-depth-5 {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=index.css.map */
