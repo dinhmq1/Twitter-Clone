@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * HTML5 Boilerplate
  *
@@ -46,12 +47,10 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
 html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  width: 300px;
-  /* set the width */
+  width: 90%;
   margin: 0 auto;
+  max-width: 950px;
+  /* set the width */
   /* center the content */ }
 
 html,
@@ -72,6 +71,14 @@ body {
  * These selection declarations have to be separate
  * Also: hot pink! (or customize the background color to match your design)
  */
+.Application {
+  display: block;
+  width: 96.6666%; }
+
+.Application--sidebar {
+  display: flex;
+  width: 96.6666%; }
+
 ::-moz-selection {
   background: #fe57a1;
   color: #fff;
@@ -454,6 +461,95 @@ td {
   h2,
   h3 {
     page-break-after: avoid; } }
+a.button {
+  text-decoration: none; }
+
+button, input[type="submit"], .button {
+  background-color: #1db2d3;
+  border-radius: 3px;
+  border: 1px solid #178ca6;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 0.8rem;
+  font-weight: 300;
+  outline: none;
+  padding: 0.5rem 1rem;
+  transition: 0.2s all; }
+
+/*@media screen and (max-width: 450px) {
+  button, input[type="submit"], .button {
+    display: block;
+    margin-bottom: 10px;
+    width: 400px;
+  }
+}*/
+button:not(:last-child), input[type="submit"]:not(:last-child), .button :not(:last-child) {
+  margin-right: 1em; }
+
+button:hover, input[type="submit"]:hover, .button:hover {
+  background-color: #3ec6e5;
+  border-color: #1db2d3; }
+
+button:active, input[type="submit"]:active, .button:active {
+  background-color: #1a9fbc;
+  border-color: #147990;
+  box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(1px, 1px); }
+
+button:disabled, input[type="submit"]:disabled, .button:disabled {
+  background-color: white;
+  border-color: #aaa;
+  box-shadow: none;
+  color: #aaa; }
+
+button.forward:after, input[type="submit"].forward:after, .button.forward:after {
+  content: ' →'; }
+
+button.back:before, input[type="submit"].back:before, .button.back:before {
+  content: '← '; }
+
+button.secondary, input[type="submit"].secondary, .button.secondary {
+  background-color: white;
+  box-sizing: border-box;
+  color: #1db2d3; }
+
+button.secondary:hover, input[type="submit"].secondary:hover, .button.secondary:hover {
+  background-color: #F9F9F9;
+  color: #178ca6; }
+
+button.secondary:active, input[type="submit"].secondary:active, .button.secondary:active {
+  background-color: #EEE; }
+
+button.destructive, input[type="submit"].destructive, .button.destructive {
+  background-color: #d31d1d;
+  border-color: #a61717; }
+
+button.destructive:hover, input[type="submit"].destructive:hover, .button.destructive:hover {
+  background-color: #e53e3e;
+  border-color: #d31d1d; }
+
+button.destructive:active, input[type="submit"].destructive:active, .button.destructive:active {
+  background-color: #a61717;
+  border-color: #791111; }
+
+button.block, input[type="submit"].block, .button.block {
+  display: block;
+  width: 100%; }
+
+button.large, input[type="submit"].large, .button.large {
+  font-size: 1.5em; }
+
+button.small, input[type="submit"].small, .button.small {
+  font-size: 0.8em;
+  padding: 0.5em 1em; }
+
+input:not([type="submit"]) {
+  border: 1px solid #ccc;
+  margin-bottom: 0.5em;
+  padding: 1em 0.5em;
+  width: 90%; }
+
 body {
   width: 100%;
   float: left; }
@@ -489,12 +585,7 @@ iPad 3
   /* Styles */ }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* Styles */
-  html {
-    background: -webkit-linear-gradient(#0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    background: -moz-linear-gradient(#0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    background: -o-linear-gradient(#0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    background: linear-gradient(#0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); } }
+  /* Styles */ }
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   /* Styles */ }
